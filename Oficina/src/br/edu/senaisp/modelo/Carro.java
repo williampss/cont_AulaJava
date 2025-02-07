@@ -17,7 +17,8 @@ public class Carro {
 		
 	}
 	
-//     permite que a informação editada( ou seja torna possível escrever nesse ambiente)
+//     permite que a informação editada( ou seja torna possível escrever nesse ambiente), 
+//	por isso ele tem void, pois ele é vazio receber novas informações
 	public void setNome(String n) {
 		nome = n;
 	}
