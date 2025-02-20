@@ -4,8 +4,8 @@ public class Professor extends Pessoa {
 
 	private Integer id;
 	
-	public Professor(String nome, String cpf, Integer id) {
-		super(nome, cpf);
+	public Professor(String nome, String cpf, int ano, Integer id) {
+		super(nome, cpf, ano);
 		this.id = id;
 	}
 
@@ -16,6 +16,15 @@ public class Professor extends Pessoa {
 	public void setId(Integer id) {
 		this.id = id;
 	}
+
+	@Override
+	public int calcIdade() {
+		
+		return 2025 - anoNascimento;
+		
+	}
+	
+	
 	
 	
 	

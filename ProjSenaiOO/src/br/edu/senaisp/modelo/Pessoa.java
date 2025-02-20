@@ -1,17 +1,23 @@
 package br.edu.senaisp.modelo;
 
-public class Pessoa {
+public abstract  class Pessoa {
 	
 	private String nome;
 	private String cpf;
+	protected int anoNascimento;
 	
 	
 	
-	public Pessoa(String nome, String cpf) {
+	public Pessoa(String nome, String cpf, int anoNascimento) {
 		this.nome = nome;
 		this.cpf = cpf;
+		this.anoNascimento = anoNascimento;
 	}
-
+	
+	
+//	usando o  metódo  abstrato é para obrigar as classes filho  a implementarem o código conforme cada particularidade.
+//	Por isso, ela não tem código implementado.
+	public abstract int  calcIdade();
 
 
 	public String getNome() {

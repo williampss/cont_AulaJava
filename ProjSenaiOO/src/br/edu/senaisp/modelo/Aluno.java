@@ -3,8 +3,8 @@ package br.edu.senaisp.modelo;
 public class Aluno extends Pessoa {
 	private Integer nrMatricula ;
 
-	public Aluno(String nome, String cpf, int nrMatricula) {
-		super(nome, cpf);
+	public Aluno(String nome, String cpf, int ano,  int nrMatricula) {
+		super(nome, cpf, ano);
 		this.nrMatricula = nrMatricula;
 	}
 
@@ -14,6 +14,12 @@ public class Aluno extends Pessoa {
 
 	public void setNrMatricula(Integer nrMatricula) {
 		this.nrMatricula = nrMatricula;
+	}
+
+	@Override
+	public int calcIdade() {
+	
+		return 2025 - anoNascimento;
 	}
 
 	
