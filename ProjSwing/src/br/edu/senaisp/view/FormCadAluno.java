@@ -18,7 +18,24 @@ public class FormCadAluno extends JFrame {
 		JButton btnOk = new JButton("OK");
 		add(btnOk);
 		
-		setVisible(true);
+	setVisible(true);
+		
+		
+		btnOk.addActionListener(
+				new  ActionListener() {
+					
+					@Override
+					public void actionPerformed(ActionEvent e) {
+						
+						JOptionPane.showConfirmDialog(null, "Teste");
+						
+						
+					}
+				}
+				
+				
+				
+				);
 		
 	}
 	
