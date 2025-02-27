@@ -7,7 +7,7 @@ import br.edu.senaisp.model.Aluno;
 
 public class AlunoDao {
 	
-	private List<Aluno> tbAluno = new ArrayList<>();
+	private static List<Aluno> tbAluno = new ArrayList<>();
 	
 	public void salvar(Aluno a) {
 		tbAluno.add(a);
